@@ -46,33 +46,47 @@ function App({
       {/* here we can add a new post */}
       <h4>Add a new Post</h4>
       <form className='form' onSubmit={onSubmit}>
-        <label>Title
+        <div>
+
+          <label>Title
+          </label><br />
         <input
             value={formValues.title}
             onChange={onChange}
             name='title'
           />
-        </label><br />
+        </div>
+<div>
 
-        <label>Post
+        <label>Post</label><br/>
+        {/* <textarea
+              name="body"
+              value={formValues.post}
+              onChange={onChange}
+              id=""
+              cols="90"
+              rows="10"
+            ></textarea> */}
         <input
             value={formValues.post}
             onChange={onChange}
             name='post'
-          />
-        </label><br />
+          /><br/>
+        
+</div>
 
         <input type='submit' />
       </form>
 
       {/* list of current posts */}
-      <h4>My Posts:</h4>
+      <h4>Posts:</h4>
       {
         posts.map(pst => (
           <div
             key={pst.id}
           >
-            {pst.title} {pst.post} 
+           <h3>{pst.title}</h3>
+        <p>{pst.post}</p>
             <button >Delete post</button>
           </div>
         ))

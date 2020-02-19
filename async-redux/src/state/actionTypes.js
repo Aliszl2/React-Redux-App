@@ -10,6 +10,9 @@ export const SET_POSTED_POST = 'SET_POSTED_POST' // add the POST to the redux
 // spinner
 export const SPINNER_START = 'SPINNER_START'
 export const SPINNER_STOP = 'SPINNER_STOP'
-// marking married
+//delete post
+export const DELETE_POST = 'DELETE_POST'
+
+// edit post
 export const PUT_POST_START = 'PUT_POST_START'
 export const SET_UPDATED_POST = 'SET_UPDATED_POST'
